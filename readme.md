@@ -14,6 +14,10 @@ e.g.
 
     docker run --rm -it -v $PWD:/tmp mac/exiftool -all:all= some_image.jpg
 
+### podman version
+
+    podman run --rm -it -v $PWD:/tmp:Z localhost/mac/exiftool -all:all= <image name>
+
 ## Upload image to ECR
 
 Replace all <something>s with actual values. Also change repository name if you are using a different name.
