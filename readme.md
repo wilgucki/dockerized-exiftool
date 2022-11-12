@@ -8,7 +8,11 @@ Original tool, docs, etc - https://exiftool.org/
 
 ## Run container
 
-    docker run --rm -it -v $PWD:/home/app/storage mac/exiftool <exiftool options and args>
+    docker run --rm -it -v $PWD:/tmp mac/exiftool <exiftool options and args> <image name>
+
+e.g.
+
+    docker run --rm -it -v $PWD:/tmp mac/exiftool -all:all= some_image.jpg
 
 ## Upload image to ECR
 
